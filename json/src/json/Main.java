@@ -1,5 +1,6 @@
 //lettura su file in formato json
 
+//ok
 package json;
 
 import java.io.*;
