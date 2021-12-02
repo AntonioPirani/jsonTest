@@ -10,7 +10,17 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		try {
+			BufferedReader reader = new BufferedReader (new FileReader ("fileJSON.txt"));
 			
+			do {
+				next = reader.readLine();
+				if ( next != null) {
+					
+					System.out.println(next);
+					
+				}
+				
+			} while (next != null);
 		}
 		
 		catch (FileNotFoundException e) {
