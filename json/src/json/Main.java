@@ -9,6 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		System.out.println("Prova run");
+		String next;
+		
 		try {
 			BufferedReader reader = new BufferedReader (new FileReader ("fileJSON.txt"));
 			
