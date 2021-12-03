@@ -11,8 +11,10 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Prova run");
+		System.out.println("Prova run #2");
 		String next;
+		
+		String s="";
 		
 		try {
 			BufferedReader reader = new BufferedReader (new FileReader ("fileJSON.txt"));
@@ -21,11 +23,19 @@ public class Main {
 				next = reader.readLine();
 				if ( next != null) {
 					
-					System.out.println(next);
+					//System.out.println(next);
+					s=s+next;
 					
 				}
 				
 			} while (next != null);
+			
+			System.out.println(s);
+			
+			Object obj = JSONValue.parse(s);
+		   // JSONArray array = (JSONArray)obj;
+			System.out.println("Stampa di obj: \n" + obj);
+		    
 		}
 		
 		catch (FileNotFoundException e) {
