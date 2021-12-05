@@ -1,19 +1,22 @@
 {
-   "employees":[
-      {
-         "firstName":"John",
-         "lastName":"Doe",
-         "age":18
-      },
-      {
-         "firstName":"Anna",
-         "lastName":"Smith",
-         "age":30
-      },
-      {
-         "firstName":"Peter",
-         "lastName":"Jones",
-         "age":41
+   "menu":{
+      "id":"file",
+      "value":"File",
+      "popup":{
+         "menuitem":[
+            {
+               "value":"New",
+               "onclick":"CreateNewDoc()"
+            },
+            {
+               "value":"Open",
+               "onclick":"OpenDoc()"
+            },
+            {
+               "value":"Close",
+               "onclick":"CloseDoc()"
+            }
+         ]
       }
-   ]
+   }
 }

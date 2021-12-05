@@ -32,9 +32,14 @@ public class Main {
 			
 			System.out.println(s);
 			
-			Object obj = JSONValue.parse(s);
+			//Object obj = JSONValue.parse(s);
 		   // JSONArray array = (JSONArray)obj;
-			System.out.println("Stampa di obj: \n" + obj);
+			//System.out.println("Stampa di obj: \n" + obj);
+			
+			JSONObject obj = (JSONObject)JSONValue.parse(s);
+			String id = (String) obj.get("id");
+			System.out.println("Impiegato: "+id);
+			
 		    
 		}
 		
